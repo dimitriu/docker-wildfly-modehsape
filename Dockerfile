@@ -19,5 +19,5 @@ RUN /opt/jboss/wildfly/bin/add-user.sh -a -u admin -p admin -g admin,readwrite,r
 
 EXPOSE 8080 9990
 
-CMD ["/opt/jboss/wildfly/bin/standalone.sh", "-c", "standalone-modeshape-ha.xml", "-b", "0.0.0.0", "-bmanagement", "0.0.0.0"]
+CMD ["/opt/jboss/wildfly/bin/standalone.sh", "-c", "standalone-modeshape.xml", "-b", "0.0.0.0", "-bmanagement", "0.0.0.0"]
 
